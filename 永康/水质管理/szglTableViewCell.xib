@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="szglTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6u-7z-Iu4">
+                        <rect key="frame" x="13" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="水质类别：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmJ-4p-lhU">
+                        <rect key="frame" x="8" y="38" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4if-lk-TXL">
+                        <rect key="frame" x="253" y="23" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYr-ZE-oMn">
+                        <rect key="frame" x="68" y="6" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="暂无数据" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLL-1q-nob">
+                        <rect key="frame" x="101" y="38" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jmJ-4p-lhU" secondAttribute="bottom" constant="5" id="83L-DI-m4Z"/>
+                    <constraint firstItem="ZLL-1q-nob" firstAttribute="leading" secondItem="jmJ-4p-lhU" secondAttribute="trailing" constant="2" id="A1X-MF-OjD"/>
+                    <constraint firstItem="jmJ-4p-lhU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hwg-gM-wdH"/>
+                    <constraint firstAttribute="centerY" secondItem="4if-lk-TXL" secondAttribute="centerY" id="RB0-i5-yEc"/>
+                    <constraint firstAttribute="trailing" secondItem="4if-lk-TXL" secondAttribute="trailing" constant="10" id="TPj-Td-FQc"/>
+                    <constraint firstItem="mYr-ZE-oMn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="fYq-Ta-pa6"/>
+                    <constraint firstItem="V6u-7z-Iu4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jjn-zs-OSR"/>
+                    <constraint firstItem="mYr-ZE-oMn" firstAttribute="leading" secondItem="V6u-7z-Iu4" secondAttribute="trailing" constant="5" id="sHW-Kb-ZNw"/>
+                    <constraint firstAttribute="bottom" secondItem="ZLL-1q-nob" secondAttribute="bottom" constant="5" id="wbz-1n-Iew"/>
+                    <constraint firstItem="V6u-7z-Iu4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ypY-WU-90G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelDm" destination="V6u-7z-Iu4" id="qFy-XK-3Yb"/>
+                <outlet property="labelHl" destination="mYr-ZE-oMn" id="hK8-fb-OHg"/>
+                <outlet property="labelSj" destination="4if-lk-TXL" id="UlA-dP-R1a"/>
+                <outlet property="labelSz" destination="ZLL-1q-nob" id="Y36-O8-AKO"/>
+            </connections>
+            <point key="canvasLocation" x="334" y="324"/>
+        </tableViewCell>
+    </objects>
+</document>

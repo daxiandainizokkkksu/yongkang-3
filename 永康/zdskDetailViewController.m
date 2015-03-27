@@ -7,20 +7,23 @@
 //
 
 #import "zdskDetailViewController.h"
-#import "UUChart.h"
+#import "myTableViewCell.h"
 
-@interface zdskDetailViewController ()<UUChartDataSource>
-{
-    UUChart *chartView;
-}
+
+@interface zdskDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
+
 @end
 
 @implementation zdskDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self create];
+  
     self.view.backgroundColor=[UIColor whiteColor];
+    UITableView *mytableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.view addSubview:mytableView];
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -29,46 +32,24 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)create{
-    chartView=[[UUChart alloc]initwithUUChartDataFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-64) withSource:self withStyle:UUChartLineStyle];
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
     
-    [self.view addSubview:chartView];
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return section?1:4;
 
 }
--(NSArray *)getXTitles:(int)num
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSMutableArray *xTitles = [NSMutableArray array];
-    for (int i=0; i<num; i++) {
-        NSString * str = [NSString stringWithFormat:@"R-%d",i];
-        [xTitles addObject:str];
+    static NSString *cellIdentifier=@"TableViewCell";
+    myTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell==nil) {
+        <#statements#>
     }
-    return xTitles;
-}
-
-
-#pragma mark -@requeired
--(NSArray *)UUChart_xLableArray:(UUChart *)chart
-{
-    return [self getXTitles:5];
 
 }
 
-
-- (NSArray *)UUChart_yValueArray:(UUChart *)chart
-{
-    NSArray *ary = @[@"22",@"44",@"15",@"40",@"42"];
-    NSArray *ary1 = @[@"22",@"54",@"15",@"30",@"42",@"77",@"43"];
-    return @[ary,ary1];
-    
-}
-
-- (NSArray *)UUChart_ColorArray:(UUChart *)chart
-{
-    return @[UUGreen,UURed,UUBrown];
-}
--(CGRange)UUChartChooseRangeInLineChart:(UUChart *)chart
-{
-    return CGRangeMake(100, 0);
-
-}
 @end

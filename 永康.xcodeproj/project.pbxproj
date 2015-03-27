@@ -90,6 +90,8 @@
 		2BBD56D31AA828F200501B58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBD56D21AA828F200501B58 /* Images.xcassets */; };
 		2BBD56D61AA828F200501B58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BBD56D41AA828F200501B58 /* LaunchScreen.xib */; };
 		2BBD56E21AA828F200501B58 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD56E11AA828F200501B58 /* __Tests.m */; };
+		2BC24EF31AC4F5E300A9DCE5 /* myTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC24EF11AC4F5E300A9DCE5 /* myTableViewCell.m */; };
+		2BC24EF41AC4F5E300A9DCE5 /* myTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC24EF21AC4F5E300A9DCE5 /* myTableViewCell.xib */; };
 		2BF331741AB167A900A03875 /* tabBarXukezhengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF331731AB167A900A03875 /* tabBarXukezhengViewController.m */; };
 		2BF331771AB167C300A03875 /* tabBarQuyongshuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF331761AB167C300A03875 /* tabBarQuyongshuiViewController.m */; };
 		2BF331791AB169DC00A03875 /* primit_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF331781AB169DC00A03875 /* primit_bg.png */; };
@@ -243,6 +245,9 @@
 		2BBD56DB1AA828F200501B58 /* 永康Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "永康Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBD56E01AA828F200501B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BBD56E11AA828F200501B58 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		2BC24EF01AC4F5E300A9DCE5 /* myTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewCell.h; sourceTree = "<group>"; };
+		2BC24EF11AC4F5E300A9DCE5 /* myTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewCell.m; sourceTree = "<group>"; };
+		2BC24EF21AC4F5E300A9DCE5 /* myTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myTableViewCell.xib; sourceTree = "<group>"; };
 		2BF331721AB167A900A03875 /* tabBarXukezhengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tabBarXukezhengViewController.h; path = ../tabBarXukezhengViewController.h; sourceTree = "<group>"; };
 		2BF331731AB167A900A03875 /* tabBarXukezhengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tabBarXukezhengViewController.m; path = ../tabBarXukezhengViewController.m; sourceTree = "<group>"; };
 		2BF331751AB167C300A03875 /* tabBarQuyongshuiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tabBarQuyongshuiViewController.h; path = ../tabBarQuyongshuiViewController.h; sourceTree = "<group>"; };
@@ -443,6 +448,9 @@
 				2B7EA44F1AC3D74900508D7A /* gsglDetailViewController.m */,
 				2B7EA4511AC3F0C700508D7A /* zdskDetailViewController.h */,
 				2B7EA4521AC3F0C700508D7A /* zdskDetailViewController.m */,
+				2BC24EF01AC4F5E300A9DCE5 /* myTableViewCell.h */,
+				2BC24EF11AC4F5E300A9DCE5 /* myTableViewCell.m */,
+				2BC24EF21AC4F5E300A9DCE5 /* myTableViewCell.xib */,
 				2BF6A16A1AC29194006B2E1B /* gsTableViewCell.h */,
 				2BF6A16B1AC29194006B2E1B /* gsTableViewCell.m */,
 				2BF6A16C1AC29194006B2E1B /* gsTableViewCell.xib */,
@@ -676,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B9831AE1AAD351A00CCE643 /* bg1.png in Resources */,
+				2BC24EF41AC4F5E300A9DCE5 /* myTableViewCell.xib in Resources */,
 				2BF6A16E1AC29194006B2E1B /* gsTableViewCell.xib in Resources */,
 				2BB6E59D1AB90F7300DB59FF /* gq1TableViewCell.xib in Resources */,
 				2BB6E5AF1AB9602100DB59FF /* ico_w_4.png in Resources */,
@@ -806,6 +815,7 @@
 				2B6C5FAE1ABA5D11007EBB7E /* tianqiViewController.m in Sources */,
 				2B553F4A1AB677DE00413214 /* yqViewController.m in Sources */,
 				2B793C3D1AB2C26900051002 /* tabBarSgnqViewController.m in Sources */,
+				2BC24EF31AC4F5E300A9DCE5 /* myTableViewCell.m in Sources */,
 				2B91718E1AC23A2F001B11D0 /* gsglViewController.m in Sources */,
 				2BF6A1601AC28A44006B2E1B /* gmscViewController.m in Sources */,
 				2B90C5291AB8281D00F9FF25 /* gqViewController.m in Sources */,
